@@ -11,6 +11,15 @@ export default {
             padding:'16px',
         },
       extend: {
+        animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+          },
         colors: {
             'nav' : '#1e293b',
             'dark': '#0f172a',
